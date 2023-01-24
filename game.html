@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en-US">
     <head>
         <meta charset="UTF-8" />
@@ -8,29 +8,21 @@
         <!-- Link CSS Primer here -->
         <link rel="stylesheet" href="https://unpkg.com/@primer/css@%5E20.2.4/dist/primer.css" />
         <!-- Link external CSS stylesheet here -->
-        <link rel="stylesheet" href="./assets/style.css" />
-        <title>Hardcore Memory Game Landing Page</title>
+        <title>Hardcore Memory Game Page</title>
     </head>
 
     <body>
         <header>
             <h1>Hardcore Memory Game</h1>
         </header>
-
-        <div class="instructions-container">
-            <!-- Game instructions go here -->
+        <div class="game-container">
+            <button class="return-home">return home</button>
+            <button class="start-over">start over</button>
+            <!-- game card rows here -->
+            <!-- count-up timer -->
+            <p id="count-up-timer" class="timer"></p>
         </div>
 
-        <div class="select-theme">
-            <!-- drop down menu for theme selection -->
-        </div>
-
-        <div class="high-scores">
-            <!-- top 5 high scores -->
-        </div>
-
-        <button class="start-game">let's go!</button>
-        
         <!-- Day.js CDN link -->
         <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
         <script>dayjs().format()</script>
@@ -38,6 +30,7 @@
         <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
         <!-- External JavaScript file -->
         <script src="./assets/script.js"></script>
+        
     </body>
 
 </html>
