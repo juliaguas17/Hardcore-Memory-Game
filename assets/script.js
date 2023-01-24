@@ -1,0 +1,1 @@
+// Declare global variables

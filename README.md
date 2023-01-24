@@ -8,5 +8,3 @@
 -so that I may reduce the effects of potential dementia
 
 ## Acceptance Criteria
-
-## 
