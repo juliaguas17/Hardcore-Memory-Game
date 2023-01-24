@@ -1,2 +1,2 @@
-# team-project-one
+# Project 1: Memory Quiz
  
