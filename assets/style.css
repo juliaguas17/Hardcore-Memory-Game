@@ -24,3 +24,83 @@ h1 {
     display: grid;
     
 }
+
+/* Variables from Primer Framework
+
+Buttons for "Start Game" "Return Home" and "Start Over"...
+<button class="btn-mktg btn-signup-mktg btn-large-mktg" type="button">Start Game</button>
+<button class="btn-mktg btn-signup-mktg btn-large-mktg" type="button">Return Home</button>
+<button class="btn-mktg btn-signup-mktg btn-large-mktg" type="button">Start Over</button>
+
+
+Select menu for card theme...
+<details class="details-reset details-overlay" open>
+  <summary class="btn" aria-haspopup="true">
+    Choose a Theme
+  </summary>
+  <div class="SelectMenu">
+    <div class="SelectMenu-modal">
+      <div class="SelectMenu-list">
+        <button class="SelectMenu-item" role="menuitem">Theme 1</button>
+        <button class="SelectMenu-item" role="menuitem">Theme 2</button>
+        <button class="SelectMenu-item" role="menuitem">Theme 3</button>
+      </div>
+    </div>
+  </div>
+</details>
+
+Other menu options: https://primer.style/css/components/menu
+
+Example list of 4 cards displayed... Need to add hover and make sure they disappear when matched.
+<ul class="list-style-none">
+  <li class="d-inline-block col-2 p-2">
+    <img class="width-full avatar" src="image link 1" alt="image 1" />
+  </li>
+  <!--
+  -->
+  <li class="d-inline-block col-2 p-2">
+    <img class="width-full avatar" src="image link 2" alt="image 2" />
+  </li>
+  <!--
+  -->
+  <li class="d-inline-block col-2 p-2">
+    <img class="width-full avatar" src="image link 3" alt="image 3" />
+  </li>
+  <!--
+  -->
+  <li class="d-inline-block col-2 p-2">
+    <img class="width-full avatar" src="image link 4" alt="image 4" />
+  </li>
+</ul>
+
+We could also display the cards with flexboxes...
+<div class="border d-flex flex-justify-around">
+ <div class="p-5 border color-bg-subtle">Image 1</div>
+ <div class="p-5 border color-bg-subtle">Image 2</div>
+ <div class="p-5 border color-bg-subtle">Image 3</div>
+</div>
+
+Grid options: https://primer.style/css/utilities/grid
+Flexbox options: https://primer.style/css/utilities/flexbox
+
+Form to enter initials when the game is over...
+<div class="Box Box--spacious col-6 mx-auto text-center">
+  <form>
+    <div class="Box-body">
+      <h3 class="f1-light">
+        Game over!
+      </h3>
+      <div class="form-group mb-4">
+        <div class="form-group-header"><label>Enter your initials:</label></div>
+        <div class="form-group-body"><input class="form-control" type="text" /></div>
+      </div>
+      <button class="btn btn-primary btn-block">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+
+
+/* 
