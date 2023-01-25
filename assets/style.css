@@ -1,1 +1,26 @@
 /*Style*/
+
+/* Game Title */
+h1 {
+    color: SeaGreen;
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 10px;
+}
+
+.bg-white { 
+    background-size: 100%;
+    background-color: #fff; 
+}
+
+.box {
+    display: inline;
+    border-radius: 3px;
+    border: 1px solid darkseagreen;
+}
+
+.grid-container {
+    display: grid;
+    
+}
