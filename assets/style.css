@@ -14,15 +14,14 @@ h1 {
   background-color: #fff; 
 }
 
-.box {
+/* .box {
   display: inline;
   border-radius: 3px;
   border: 1px solid darkseagreen;
-}
+} */
 
-.grid-container {
-  display: grid;
-  
+.game-container {
+  justify-content: center;
 }
 
 /* Variables from Primer Framework
