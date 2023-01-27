@@ -15,42 +15,44 @@
     <body>
         <header>
             <h1>Hardcore Memory Game</h1>
-        </header>
-        <div class="game-container">
             <button class="btn-mktg btn-signup-mktg btn-large-mktg" type="button">Return Home</button>
             <button class="btn-mktg btn-signup-mktg btn-large-mktg" type="button">Start Over</button>
             
-            <!-- game card rows here -->
-            <div class="border d-flex">
-                <div class="p-5 border color-bg-subtle">flex item 1</div>
-                <div class="p-5 border color-bg-subtle">flex item 2</div>
-                <div class="p-5 border color-bg-subtle">flex item 3</div>
-                <div class="p-5 border color-bg-subtle">flex item 4</div>
-            </div>
-
-            <div class="border d-flex">
-                <div class="p-5 border color-bg-subtle">flex item 5</div>
-                <div class="p-5 border color-bg-subtle">flex item 6</div>
-                <div class="p-5 border color-bg-subtle">flex item 7</div>
-                <div class="p-5 border color-bg-subtle">flex item 8</div>
-            </div>
-
-            <div class="border d-flex">
-                <div class="p-5 border color-bg-subtle">flex item 9</div>
-                <div class="p-5 border color-bg-subtle">flex item 10</div>
-                <div class="p-5 border color-bg-subtle">flex item 11</div>
-                <div class="p-5 border color-bg-subtle">flex item 12</div>
-            </div>
-
-            <div class="border d-flex">
-                <div class="p-5 border color-bg-subtle">flex item 13</div>
-                <div class="p-5 border color-bg-subtle">flex item 14</div>
-                <div class="p-5 border color-bg-subtle">flex item 15</div>
-                <div class="p-5 border color-bg-subtle">flex item 16</div>
-            </div>
-
             <!-- count-up timer -->
-            <p id="count-up-timer" class="timer"></p>
+            <p id="count-up-timer"></p>
+
+        </header>
+
+        <div class="game-container">
+            <!-- game card rows here -->
+            <div class="d-flex flex-justify-center">
+                <div class="p-5 border color-bg-success">flex item 1</div>
+                <div class="p-5 border color-bg-done">flex item 2</div>
+                <div class="p-5 border color-bg-success">flex item 3</div>
+                <div class="p-5 border color-bg-done">flex item 4</div>
+            </div>
+
+            <div class="d-flex flex-justify-center">
+                <div class="p-5 border color-bg-done">flex item 5</div>
+                <div class="p-5 border color-bg-success">flex item 6</div>
+                <div class="p-5 border color-bg-done">flex item 7</div>
+                <div class="p-5 border color-bg-success">flex item 8</div>
+            </div>
+
+            <div class="d-flex flex-justify-center">
+                <div class="p-5 border color-bg-success">flex item 9</div>
+                <div class="p-5 border color-bg-done">flex item 10</div>
+                <div class="p-5 border color-bg-success">flex item 11</div>
+                <div class="p-5 border color-bg-done">flex item 12</div>
+            </div>
+
+            <div class="d-flex flex-justify-center">
+                <div class="p-5 border color-bg-done">flex item 13</div>
+                <div class="p-5 border color-bg-success">flex item 14</div>
+                <div class="p-5 border color-bg-done">flex item 15</div>
+                <div class="p-5 border color-bg-success">flex item 16</div>
+            </div>
+            
         </div>
         
         <!-- Form to enter initials and time as a high score -->
@@ -76,6 +78,7 @@
         <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
         <!-- External JavaScript file -->
         <script src="./assets/script.js"></script>
+        <script src="./script-timerTest.js"></script>
         
     </body>
 
