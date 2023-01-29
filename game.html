@@ -16,10 +16,10 @@
         <header>
             <h1>Hardcore Memory Game</h1>
             <button class="btn-mktg btn-signup-mktg btn-large-mktg" type="button" onclick="document.location='index.html'">Return Home</button>
-            <button class="btn-mktg btn-signup-mktg btn-large-mktg" type="button" onclick="document.location='game.html'">Start Over</button>
+            <button class="btn-mktg btn-signup-mktg btn-large-mktg" type="button" onClick="window.location.reload()">Start Over</button>
             
             <!-- count-up timer -->
-            <p id="count-up-timer"></p>
+            <label id="minutes">00</label>:<label id="seconds">00</label>
 
         </header>
 
@@ -70,7 +70,12 @@
                 <button class="btn btn-primary btn-block"">Submit</button>
             </form>
         </div>
-
+        <!-- Modal alert -->
+        <div class="flash mt-3 flash-success">
+        Show trivia!
+        <!--function call to get trivia sentence-->
+        <button type="submit" class="btn btn-sm flash-action">Exit</button>
+        </div>
         <!-- Day.js CDN link -->
         <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
         <script>dayjs().format()</script>
