@@ -15,75 +15,44 @@
     <body>
         <header>
             <h1>Hardcore Memory Game</h1>
-        </header>
-        <div class="game-container">
             <button class="btn-mktg btn-signup-mktg btn-large-mktg" type="button">Return Home</button>
             <button class="btn-mktg btn-signup-mktg btn-large-mktg" type="button">Start Over</button>
-            <!-- game card rows here -->
-            <ul class="list-style-none">
-                <li class="d-inline-block col-2 p-2"> 
-                  <img class="width-full avatar" src="./assets/Placeholder-svg.svg" alt="card 1" />
-                </li>
-                <li class="d-inline-block col-2 p-2">
-                  <img class="width-full avatar" src="./assets/Placeholder-svg.svg" alt="image 2" />
-                </li>
-                <li class="d-inline-block col-2 p-2">
-                  <img class="width-full avatar" src="./assets/Placeholder-svg.svg" alt="image 3" />
-                </li>
-                <li class="d-inline-block col-2 p-2">
-                  <img class="width-full avatar" src="./assets/Placeholder-svg.svg" alt="image 4" />
-                </li>
-                <li class="d-inline-block col-2 p-2">
-                    <img class="width-full avatar" src="./assets/Placeholder-svg.svg" alt="card 1" />
-                </li>
-                <li class="d-inline-block col-2 p-2">
-                    <img class="width-full avatar" src="./assets/Placeholder-svg.svg" alt="image 2" />
-                </li>
-                <li class="d-inline-block col-2 p-2">
-                    <img class="width-full avatar" src="./assets/Placeholder-svg.svg" alt="image 3" />
-                </li>
-                <li class="d-inline-block col-2 p-2">
-                    <img class="width-full avatar" src="./assets/Placeholder-svg.svg" alt="image 4" />
-                </li>
-                <li class="d-inline-block col-2 p-2">
-                    <img class="width-full avatar" src="./assets/Placeholder-svg.svg" alt="card 1" />
-                </li>
-                <li class="d-inline-block col-2 p-2">
-                    <img class="width-full avatar" src="./assets/Placeholder-svg.svg" alt="image 2" />
-                </li>
-                <li class="d-inline-block col-2 p-2">
-                    <img class="width-full avatar" src="./assets/Placeholder-svg.svg" alt="image 3" />
-                </li>
-                <li class="d-inline-block col-2 p-2">
-                    <img class="width-full avatar" src="./assets/Placeholder-svg.svg" alt="image 4" />
-                </li>
-                <li class="d-inline-block col-2 p-2">
-                    <img class="width-full avatar" src="./assets/Placeholder-svg.svg" alt="card 1" />
-                </li>
-                <li class="d-inline-block col-2 p-2">
-                    <img class="width-full avatar" src="./assets/Placeholder-svg.svg" alt="image 2" />
-                </li>
-                <li class="d-inline-block col-2 p-2">
-                    <img class="width-full avatar" src="./assets/Placeholder-svg.svg" alt="image 3" />
-                </li>
-                <li class="d-inline-block col-2 p-2">
-                    <img class="width-full avatar" src="./assets/Placeholder-svg.svg" alt="image 4" />
-                </li>
-                <li class="d-inline-block col-2 p-2">
-                    <img class="width-full avatar" src="./assets/Placeholder-svg.svg" alt="card 1" />
-                </li>
-                <li class="d-inline-block col-2 p-2">
-                    <img class="width-full avatar" src="./assets/Placeholder-svg.svg" alt="image 2" />
-                </li>
-                <li class="d-inline-block col-2 p-2">
-                    <img class="width-full avatar" src="./assets/Placeholder-svg.svg" alt="image 3" />
-                </li>
-                <li class="d-inline-block col-2 p-2">
-                    <img class="width-full avatar" src="./assets/Placeholder-svg.svg" alt="image 4" />
-                </li>
-            </ul>
+            
             <!-- count-up timer -->
-            <p id="count-up-timer" class="timer"></p>
+            <p id="count-up-timer"></p>
+
+        </header>
+
+        <div class="game-container">
+            <!-- game card rows here -->
+            <div class="d-flex flex-justify-center">
+                <div class="p-5 border color-bg-success">flex item 1</div>
+                <div class="p-5 border color-bg-done">flex item 2</div>
+                <div class="p-5 border color-bg-success">flex item 3</div>
+                <div class="p-5 border color-bg-done">flex item 4</div>
+            </div>
+
+            <div class="d-flex flex-justify-center">
+                <div class="p-5 border color-bg-done">flex item 5</div>
+                <div class="p-5 border color-bg-success">flex item 6</div>
+                <div class="p-5 border color-bg-done">flex item 7</div>
+                <div class="p-5 border color-bg-success">flex item 8</div>
+            </div>
+
+            <div class="d-flex flex-justify-center">
+                <div class="p-5 border color-bg-success">flex item 9</div>
+                <div class="p-5 border color-bg-done">flex item 10</div>
+                <div class="p-5 border color-bg-success">flex item 11</div>
+                <div class="p-5 border color-bg-done">flex item 12</div>
+            </div>
+
+            <div class="d-flex flex-justify-center">
+                <div class="p-5 border color-bg-done">flex item 13</div>
+                <div class="p-5 border color-bg-success">flex item 14</div>
+                <div class="p-5 border color-bg-done">flex item 15</div>
+                <div class="p-5 border color-bg-success">flex item 16</div>
+            </div>
+            
         </div>
         
         <!-- Form to enter initials and time as a high score -->
@@ -109,7 +78,7 @@
         <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
         <!-- External JavaScript file -->
         <script src="./assets/script.js"></script>
-        <script src="./assets/trivia.js"></script>
+        <script src="./script-timerTest.js"></script>
     </body>
 
 </html>
