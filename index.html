@@ -16,26 +16,33 @@
         <header>
             <h1>Hardcore Memory Game</h1>
         </header>
+        <div class="row">
+            <div class="column">
+                <!-- Game Instructions-->
+                <div class="instructions-container">
+                    <p>Test your memory skills by finding all the matching cards.</p>
+                    <p>When the game is over, a fun fact will appear!</p>
+                    <p>Press 'Start Game' when you're ready to begin.</p>
+                </div>
+            </div>
 
-        <div class="instructions-container">
-            <!-- Game instructions go here -->
+            <div class="column">
+                <!--High Scores-->
+                <div class="high-scores-container">
+                </div>
+            </div>
         </div>
-
-        <div class="high-scores">
-            <!-- top 5 high scores -->
+        <div class="button-row">
+            <button class="btn-mktg btn-signup-mktg btn-large-mktg" type="button" onclick="document.location='game.html'">Start Game
+            </button>
         </div>
-        <!-- Start game button -->
-        
-        <button id="searchBtn" class="btn-mktg btn-signup-mktg btn-large-mktg btn-block" type="button" onclick="document.location='game.html'" >Start Game</button>
-        
-        <!-- Day.js CDN link -->
-        <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
-        <script>dayjs().format()</script>
-        <!-- jQuery CDN -->
-        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>        <!-- External JavaScript file -->
-        <script src="https://serpapi.com/search.json?q=animals&tbm=isch&ijn=0"></script>
-        <script src="./assets/script.js"></script>
-        <script src="./assets/trivia.js"></script>
     </body>
-
+    <!-- Day.js CDN link -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script>dayjs().format()</script>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>        <!-- External JavaScript file -->
+    <script src="https://serpapi.com/search.json?q=animals&tbm=isch&ijn=0"></script>
+    <script src="./assets/script.js"></script>
+    <script src="./assets/trivia.js"></script>
 </html>

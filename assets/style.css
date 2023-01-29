@@ -3,23 +3,27 @@
 /* Game Title */
 h1 {
   color: SeaGreen;
-  font-size: 40px;
+  font-size: 50px;
   font-style: italic;
   text-align: center;
   text-shadow: 10px;
+  padding: 10px;
 }
-
-
-
 
 .bg-white { 
   background-size: 100%;
   background-color: #fff; 
 }
 
-.game-container {
+.button-row {
+  padding: 20px;
+  text-align: center;
+}
+
+.column {
   justify-content: center;
-  padding: 2px;
+  padding: 20px;
+  font-size: 30px;
 }
 
 img {
