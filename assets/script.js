@@ -12,81 +12,69 @@ var apiKey = 'ab44015fa7a49dd092d72824c1d221fd';
 const cardArray = [
     {
         name: 'Pic1',
-        img: photoURLs[0]
+        img: photoURLs[0],
     },
     {
         name: 'Pic1',
-        img: photoURLs[0]
+        img: photoURLs[0],
     },
     {
         name: 'Pic2',
-        img: photoURLs[1]
+        img: photoURLs[1],
     },
     {
         name: 'Pic2',
-        img: photoURLs[1]
+        img: photoURLs[1],
     },
     {
         name: 'Pic3',
-        img: photoURLs[2]
+        img: photoURLs[2],
     },
     {
         name: 'Pic3',
-        img: photoURLs[2]
+        img: photoURLs[2],
     },
     {
         name: 'Pic4',
-        img: 'assets/images/purple.png'
+        img: photoURLs[3],
     },
     {
         name: 'Pic4',
-        img: 'assets/images/purple.png'
+        img: photoURLs[3],
     },
     {
         name: 'Pic5',
-        img: 'assets/images/yellow.png'
+        img: photoURLs[4],    
     },
     {
         name: 'Pic5',
-        img: 'assets/images/yellow.png'
+        img: photoURLs[4],   
     },
     {
         name: 'Pic6',
-        img: 'assets/images/Orange.png'
+        img: photoURLs[5],   
     },
     {
         name: 'Pic6',
-        img: 'assets/images/Orange.png'
+        img: photoURLs[5],    
     },
     {
         name: 'Pic7',
-        img: 'assets/images/Orange.png'
+        img: photoURLs[6],    
     },
     {
         name: 'Pic7',
-        img: 'assets/images/Orange.png'
+        img: photoURLs[6],    
     },
     {
         name: 'Pic8',
-        img: 'assets/images/Orange.png'
+        img: photoURLs[7],    
     },
     {
         name: 'Pic8',
-        img: 'assets/images/Orange.png'
+        img: photoURLs[7],    
     },
 ]
-
-function buildImages() {
-    for (var i = 0; i < cardArray.length; i++) {
-        var card = document.createElement('img');
-            card.setAttribute('src', cardArray.img[i]);
-            card.setAttribute('data-id', i);
-            //listen for click and invoke a flipcard function
-            card.addEventListener('click', flipCard);
-            grid.appendChild(card);
-    }
-}
-
 
 function returnData() {
     $.ajax({
@@ -118,3 +106,14 @@ function createPhotoUrl(obj) {
 
     // return 'The '+ obj.Common-Name + ' lives in a'
 } 
+
+function buildImages() {
+    for (var i = 0; i < cardArray.length; i++) {
+        var card = document.createElement('img');
+            card.setAttribute('src', cardArray.img[i]);
+            card.setAttribute('data-id', i);
+            //listen for click and invoke a flipcard function
+            card.addEventListener('click', flipCard);
+            grid.appendChild(card);
+    }
+}
