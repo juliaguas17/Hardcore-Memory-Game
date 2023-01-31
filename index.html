@@ -16,6 +16,7 @@
         <header>
             <h1>Hardcore Memory Game</h1>
         </header>
+
         <div class="row">
             <div class="column">
                 <!-- Game Instructions-->
@@ -36,12 +37,17 @@
             <button class="btn-mktg btn-signup-mktg btn-large-mktg" type="button" onclick="document.location='game.html'">Start Game
             </button>
         </div>
+
+        <!-- Day.js CDN link -->
+        <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+        <script>dayjs().format()</script>
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script> 
+            $.support.cors = true;
+        </script>
+        <script src="./assets/script.js"></script>
+        <script src="./assets/trivia.js"></script>
+        <script src="./assets/script-timerTest.js"></script>
     </body>
-    <!-- Day.js CDN link -->
-    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
-    <script>dayjs().format()</script>
-    <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>        <!-- External JavaScript file -->
-    <script src="./assets/script.js"></script>
-    <script src="./assets/trivia.js"></script>
 </html>
