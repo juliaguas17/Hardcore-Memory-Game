@@ -18,6 +18,7 @@ $.ajax({
         console.log(result[0].characteristics.habitat);
         console.log(result[0].characteristics.slogan);
         returnTrivia(result);
+        console.log(result);
     },
     error: function ajaxError(jqXHR) {
         console.error('Error: ', jqXHR.responseText);
@@ -66,4 +67,18 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+}  
+
+returnTrivia();
+
+// When all of the cards are matched,
+// show initials form and button to display modal alert with trivia fact
+function gameOver () {
+    document.getElementById("initials-form").style.display=block;
+    document.getElementById("trivia-button").style.display=block;
+}
+
+// Displays trivia modal
+function showTrivia() {
+    document.getElementById("trivia-modal").style.display=block;
 }

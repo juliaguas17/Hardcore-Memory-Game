@@ -100,3 +100,15 @@ img {
   background-color: #5cb85c;
   color: white;
 }
+
+#initials-form {
+  display: none;
+}
+
+#trivia-modal {
+  display: none;
+}
+
+#trivia-button {
+  display: none;
+}
