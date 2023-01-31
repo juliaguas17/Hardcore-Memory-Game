@@ -69,8 +69,6 @@ window.onclick = function(event) {
   }
 }  
 
-returnTrivia();
-
 // When all of the cards are matched,
 // show initials form and button to display modal alert with trivia fact
 function gameOver () {
