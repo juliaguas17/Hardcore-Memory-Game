@@ -59,7 +59,7 @@
         </div>
         
         <!-- Form to enter initials and time as a high score -->
-        <div class="Box Box--spacious col-6 mx-auto text-center">
+        <div class="Box Box--spacious col-6 mx-auto text-center" id = "initials-form">
             <form>
                 <div class="Box-body">
                     <h3 class="f1-light">
@@ -74,8 +74,13 @@
             </form>
         </div>
 
+        <!--Button to show trivia-->
+        <div class="button-row" id="trivia-button">
+            <button class="btn-mktg btn-signup-mktg btn-large-mktg" type="button" onclick=showTrivia()>Show Me a Fact!
+            </button>
+        </div>
         <!-- Modal alert -->
-        <div class="flash mt-3 flash-success">
+        <div class="flash mt-3 flash-success" id="trivia-modal">
         Show trivia!
         <!--function call to get trivia sentence-->
         <button type="submit" class="btn btn-sm flash-action">Exit</button>
@@ -89,6 +94,7 @@
         <!-- External JavaScript file -->
         <script src="./assets/script.js"></script>
         <script src="./assets/script-timerTest.js"></script>
+        <script src="./assets/trivia.js"></script>
     </body>
 
 </html>
