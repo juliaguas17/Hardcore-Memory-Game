@@ -74,11 +74,24 @@
             </form>
         </div>
 
-        <!-- Modal alert -->
-        <div class="flash mt-3 flash-success">
-        Show trivia!
-        <!--function call to get trivia sentence-->
-        <button type="submit" class="btn btn-sm flash-action">Exit</button>
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn">Show me a fact!</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Animal Fact File:</h2>
+            </div>
+            <div class="modal-body">
+                <p id="facts"></p>
+            </div>
+            <div class="modal-footer">
+                <h3>Play again to learn more!</h3>
+            </div>
         </div>
         
         <!-- Day.js CDN link -->
@@ -89,6 +102,7 @@
         <!-- External JavaScript file -->
         <script src="./assets/script.js"></script>
         <script src="./assets/script-timerTest.js"></script>
+        <script src="./assets/trivia.js"></script>
     </body>
 
 </html>
