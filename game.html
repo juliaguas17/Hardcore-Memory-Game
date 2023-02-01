@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- Link any Google fonts here -->
+        <!-- Link CSS Primer here -->
+        <link rel="stylesheet" href="https://unpkg.com/@primer/css@%5E20.2.4/dist/primer.css" />
+        <!-- Link external CSS stylesheet here -->
+        <link rel="stylesheet" href="./assets/style.css" />
+        <link rel="stylesheet" href="./assets/style.css" />
+        <title>Hardcore Memory Game Page</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Hardcore Memory Game</h1>
+            <div class="button-row">
+                <!--'Return Home' and 'Start Over' buttons-->
+                <button class="btn-mktg btn-signup-mktg btn-large-mktg" type="button" onclick="document.location='index.html'">Return Home</button>
+                <button class="btn-mktg btn-signup-mktg btn-large-mktg" type="button" onClick="window.location.reload()">Start Over</button>
+                <br></br>
+                <!-- count-up timer -->
+                <label id="minutes">00</label>:<label id="seconds">00</label>
+            </div>
+
+        </header>
+        <div class="game-container">
+            <button class="btn-mktg btn-signup-mktg btn-large-mktg" type="button">Return Home</button>
+            <button class="btn-mktg btn-signup-mktg btn-large-mktg" type="button">Start Over</button>
+            <!-- game card rows here -->
+
+        <div class="d-flex flex-justify-center row-1">
+                <div class="border color-bg-done card"><img id="cardImg1" height="200px" width="200px" src="assets/Back-400sq.jpg"></div>
+                <div class="border color-bg-success card"><img id="cardImg2" height="200px" width="200px" src="assets/Back-400sq.jpg"></div>
+                <div class="border color-bg-done card"><img id="cardImg3" height="200px" width="200px" src="assets/Back-400sq.jpg"></div>
+                <div class="border color-bg-success card"><img id="cardImg4" height="200px" width="200px" src="assets/Back-400sq.jpg"></div>
+            </div>
+
+            <div class="d-flex flex-justify-center row-2">
+                <div class="border color-bg-success card"><img id="cardImg5" height="200px" width="200px" src="assets/Back-400sq.jpg"></div>
+                <div class="border color-bg-done card"><img id="cardImg6" height="200px" width="200px" src="assets/Back-400sq.jpg"></div>
+                <div class="border color-bg-success card"><img id="cardImg7" height="200px" width="200px" src="assets/Back-400sq.jpg"></div>
+                <div class="border color-bg-done card"><img id="cardImg8" height="200px" width="200px" src="assets/Back-400sq.jpg"></div>
+            </div>
+
+            <div class="d-flex flex-justify-center row-3">
+                <div class="border color-bg-success card"><img id="cardImg9" height="200px" width="200px" src="assets/Back-400sq.jpg"></div>
+                <div class="border color-bg-done card"><img id="cardImg10" height="200px" width="200px" src="assets/Back-400sq.jpg"></div>
+                <div class="border color-bg-success card"><img id="cardImg11" height="200px" width="200px" src="assets/Back-400sq.jpg"></div>
+                <div class="border color-bg-done card"><img id="cardImg12" height="200px" width="200px" src="assets/Back-400sq.jpg"></div>
+            </div>     
+
+            <div class="d-flex flex-justify-center row-4">
+                    <div class="border color-bg-done card"><img id="cardImg13" height="200px" width="200px" src="assets/Back-400sq.jpg"></div>
+                    <div class="border color-bg-success card"><img id="cardImg14" height="200px" width="200px" src="assets/Back-400sq.jpg"></div>
+                    <div class="border color-bg-done card"><img id="cardImg15" height="200px" width="200px" src="assets/Back-400sq.jpg"></div>
+                    <div class="border color-bg-success card"><img id="cardImg16" height="200px" width="200px" src="assets/Back-400sq.jpg"></div>
+            </div>
+
+            <!-- count-up timer -->
+            <p id="count-up-timer" class="timer"></p>
+        </div>
+        
+        <!-- Form to enter initials and time as a high score -->
+        <div class="Box Box--spacious col-6 mx-auto text-center" id = "initials-form">
+            <form>
+              <div class="Box-body">
+                <h3 class="f1-light">
+                  Game over!
+                </h3>
+                <div class="form-group mb-4">
+                  <div class="form-group-header"><label>Enter your initials:</label></div>
+                  <div class="form-group-body"><input class="form-control" type="text" /></div>
+                </div>
+                <button class="btn btn-primary btn-block">Submit</button>
+              </div>
+            </form>
+            </div>
+
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn">Show me a fact!</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Animal Fact File:</h2>
+            </div>
+            <div class="modal-body">
+                <p id="facts"></p>
+            </div>
+            <div class="modal-footer">
+                <h3>Play again to learn more!</h3>
+            </div>
+        </div>
+        
+        <!-- Day.js CDN link -->
+        <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+        <script>dayjs().format()</script>
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <!-- External JavaScript file -->
+        <script src="./assets/script.js"></script>
+        <script src="./assets/script-timerTest.js"></script>
+        <script src="./assets/trivia.js"></script>
+    </body>
+
+</html>

@@ -1,1 +1,53 @@
 <!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- Link any Google fonts here -->
+        <!-- Link CSS Primer here -->
+        <link rel="stylesheet" href="https://unpkg.com/@primer/css@%5E20.2.4/dist/primer.css" />
+        <!-- Link external CSS stylesheet here -->
+        <link rel="stylesheet" href="./assets/style.css" />
+        <title>Hardcore Memory Game Landing Page</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Hardcore Memory Game</h1>
+        </header>
+
+        <div class="row">
+            <div class="column">
+                <!-- Game Instructions-->
+                <div class="instructions-container">
+                    <p>Test your memory skills by finding all the matching cards.</p>
+                    <p>When the game is over, a fun fact will appear!</p>
+                    <p>Press 'Start Game' when you're ready to begin.</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <!--High Scores-->
+                <div class="high-scores-container">
+                </div>
+            </div>
+        </div>
+        <div class="button-row">
+            <button class="btn-mktg btn-signup-mktg btn-large-mktg" type="button" onclick="document.location='game.html'">Start Game
+            </button>
+        </div>
+
+        <!-- Day.js CDN link -->
+        <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+        <script>dayjs().format()</script>
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script> 
+            $.support.cors = true;
+        </script>
+        <script src="./assets/script.js"></script>
+        <script src="./assets/trivia.js"></script>
+        <script src="./assets/script-timerTest.js"></script>
+    </body>
+</html>
