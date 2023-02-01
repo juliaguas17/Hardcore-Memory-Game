@@ -2,9 +2,9 @@
 var apiKey = 'ab44015fa7a49dd092d72824c1d221fd';
 const grid = document.querySelector('.grid');
 const resultDisplay = document.querySelector('#result');
-var cardsChosen = [];
-var cardsChosenSrc = [];
-var cardsWon = [];
+let cardsChosen = [];
+let cardsChosenSrc = [];
+let cardsWon = [];
 var cardImgOne = document.getElementById('cardImg1');
 var cardImgTwo = document.getElementById('cardImg2');
 var cardImgThree = document.getElementById('cardImg3');
@@ -39,43 +39,89 @@ grid.addEventListener('click', flipCard);
 //flip cards 
 function flipCard(event) {
     // if the target matches a specific card's id, then set the attribute to that photoURLs id#
-    if(event.target.matches('#cardImg1')) {
+    if (event.target.matches('#cardImg1')) {
         cardImgOne.setAttribute('src', photoURLs[0])
-        console.log(event.target);//this is not displaying currently
+        console.log(event.target);
     }
 
-    if(event.target.matches('#cardImg2')) {
+    if (event.target.matches('#cardImg2')) {
         cardImgTwo.setAttribute('src', photoURLs[1])
-        console.log(event.target);//this is not displaying currently
+        console.log(event.target);
     }
 
-    if(event.target.matches('#cardImg3')) {
+    if (event.target.matches('#cardImg3')) {
         cardImgThree.setAttribute('src', photoURLs[2])
-        console.log(event.target);//this is not displaying currently
+        console.log(event.target);
     }
 
-    if(event.target.matches('#cardImg4')) {
+    if (event.target.matches('#cardImg4')) {
         cardImgFour.setAttribute('src', photoURLs[3])
-        console.log(event.target);//this is not displaying currently
+        console.log(event.target);
     }
-    // cardImgTwo.setAttribute('src', photoURLs[1])
-    // cardImgThree.setAttribute('src', photoURLs[2])
-    // cardImgFour.setAttribute('src', photoURLs[3])
-    // cardImgFive.setAttribute('src', photoURLs[4])
-    // cardImgSix.setAttribute('src', photoURLs[5])
-    // cardImgSeven.setAttribute('src', photoURLs[6])
-    // cardImgEight.setAttribute('src', photoURLs[7])
-    // cardImgNine.setAttribute('src', photoURLs[8])
-    // cardImgTen.setAttribute('src', photoURLs[9])
-    // cardImgEleven.setAttribute('src', photoURLs[10])
-    // cardImgTwelve.setAttribute('src', photoURLs[11])
-    // cardImgThirteen.setAttribute('src', photoURLs[12])
-    // cardImgFourteen.setAttribute('src', photoURLs[13])
-    // cardImgFifteen.setAttribute('src', photoURLs[14])
-    // cardImgSixteen.setAttribute('src', photoURLs[15])
+
+    if (event.target.matches('#cardImg5')) {
+        cardImgFive.setAttribute('src', photoURLs[4])
+        console.log(event.target);
+    }
+
+    if (event.target.matches('#cardImg6')) {
+        cardImgSix.setAttribute('src', photoURLs[5])
+        console.log(event.target);
+    }
+
+    if (event.target.matches('#cardImg7')) {
+        cardImgSeven.setAttribute('src', photoURLs[6])
+        console.log(event.target);
+    }
+
+    if (event.target.matches('#cardImg8')) {
+        cardImgEight.setAttribute('src', photoURLs[7])
+        console.log(event.target);
+    }
+
+    if (event.target.matches('#cardImg9')) {
+        cardImgNine.setAttribute('src', photoURLs[8])
+        console.log(event.target);
+    }
+
+    if (event.target.matches('#cardImg10')) {
+        cardImgTen.setAttribute('src', photoURLs[9])
+        console.log(event.target);
+    }
+
+    if (event.target.matches('#cardImg11')) {
+        cardImgEleven.setAttribute('src', photoURLs[10])
+        console.log(event.target);
+    }
+
+    if (event.target.matches('#cardImg12')) {
+        cardImgTwelve.setAttribute('src', photoURLs[11])
+        console.log(event.target);
+    }
+
+    if (event.target.matches('#cardImg13')) {
+        cardImgThirteen.setAttribute('src', photoURLs[12])
+        console.log(event.target);
+    }
+
+    if (event.target.matches('#cardImg14')) {
+        cardImgFourteen.setAttribute('src', photoURLs[13])
+        console.log(event.target);
+    }
+
+    if (event.target.matches('#cardImg15')) {
+        cardImgFifteen.setAttribute('src', photoURLs[14])
+        console.log(event.target);
+    }
+
+    if (event.target.matches('#cardImg16')) {
+        cardImgSixteen.setAttribute('src', photoURLs[15])
+        console.log(event.target);
+    }
 
     //change cardID to src -- getAttribute src vs data-id - needs to be inside where method is called
     var cardSrc = event.target.getAttribute('src');
+    console.log(cardSrc);
     // cardsChosen.push(photoURLs[cardSrc]); //maybe add .src
     cardsChosen.push(cardSrc);
     event.target.setAttribute('src', cardSrc)
@@ -108,24 +154,17 @@ function settingBoard() {
 
             shuffleArray(photoURLs);
             console.log(photoURLs);
-
-            
-
-            
-            
-
-        },//end of success
+        },
+        //end of ajax success
 
         error: function ajaxError(jqXHR) {
             console.error('Error: ', jqXHR.responseText);
         }
-
-
+        //end of ajax error
     });
 
-
     /**
-     * this function takes an object and returns a photo url
+     * this function takes an object and returns a photo url  -- Lawrence helped with this syntax for the CreatePhotoURL and the @ param and returns
      * @param {*} obj 
      * @returns 
      */
@@ -136,48 +175,42 @@ function settingBoard() {
 }
 settingBoard(); //this and its function are working
 
-//check for matches
+//check for matches and flip back to back of card or white space
 function checkForMatch() {
     var cards = document.querySelectorAll('img');
-    const optionOneSrc = cardsChosenSrc[0];
-    const optionTwoSrc = cardsChosenSrc[1];
-    if (cardsChosen[0] === cardsChosen[1]) {
+    console.log(cards);
+    const optionOneSrc = cardSrc[0];
+    const optionTwoSrc = cardSrc[1];
+    console.log(optionOneSrc);
+    console.log(optionTwoSrc);
 
-        cards[optionOneSrc].setAttribute('src', 'assets/white-empty-square.png');
-        cards[optionTwoSrc].setAttribute('src', 'assets/white-empty-square.png');
+    
+    if (optionOneSrc === optionTwoSrc) {
+        // you clicked on the same card
+        cards[optionOneSrc].setAttribute('src', 'assets/Image/Back-400sq.jpg');
+        cards[optionTwoSrc].setAttribute('src', 'assets/Image/Back-400sq.jpg');
+    } 
+    else if (cardsChosen[0] === cardsChosen[1]) {
+        // you found a match -- win
+        cards[optionOneSrc].setAttribute('src', 'assets/Images/white-empty-square.png');
+        cards[optionTwoSrc].setAttribute('src', 'assets/Images/white-empty-square.png');
+        cards[optionOneSrc].removeEventListener('click', flipCard);
+        cards[optionTwoSrc].removeEventListener('click', flipCard);
         cardsWon.push(cardsChosen);
-    } else {
-        cards[optionOneSrc].setAttribute('src', 'assets/Back-400sq.png');
-        cards[optionTwoSrc].setAttribute('src', 'assets/Back-400sq.png');
-    }
 
+    }
+    else {
+        // not a match
+        cards[optionOneSrc].setAttribute('src', 'assets/Image/Back-400sq.jpg');
+        cards[optionTwoSrc].setAttribute('src', 'assets/Image/Back-400sq.jpg');
+    }   
+    
     cardsChosen = [];
-    cardsChosenSrc = [];
+    cardSrc = [];
+
     resultDisplay.textContent = cardsWon.length;
+    
     if (cardsWon.length === photoURLs.length / 2) {
         resultDisplay.textContent = "Congratulations! You've matched all of the cards!"
     }
 }
-
-
-
-
-//photoURLs is an array built by the createPhotoUrl & map method;
-//
-// function buildImages() {
-//     for (var i = 0; i < photoURLs.length; i++) {
-//         var card = document.createElement('img');
-//         document.getElementsByClassName(card).appendChild(img);
-//         console.log(photoURLs.length);
-//         // card.setAttribute('a', 'img');
-//         card.setAttribute('data-id', i);
-//         //listen for click and invoke a flipcard function
-//         card.addEventListener('click', flipCard);
-//         grid.appendChild(card);
-//     }
-// }
-// buildImages();
-
-
-
-// for each item in array, creat an a href inside of div tag-with card class and attribute(s)?
