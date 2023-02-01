@@ -206,7 +206,7 @@ function checkForMatch() {
     }   
     
     cardsChosen = [];
-    cardSrc = [];
+    cardsChosenSrc = [];
 
     resultDisplay.textContent = cardsWon.length;
     
