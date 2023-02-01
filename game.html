@@ -24,39 +24,36 @@
                 <!-- count-up timer -->
                 <label id="minutes">00</label>:<label id="seconds">00</label>
             </div>
-
         </header>
-        <div class="game-container">
-            <button class="btn-mktg btn-signup-mktg btn-large-mktg" type="button">Return Home</button>
-            <button class="btn-mktg btn-signup-mktg btn-large-mktg" type="button">Start Over</button>
-            <!-- game card rows here -->
 
-        <div class="d-flex flex-justify-center row-1">
-                <div class="border color-bg-done card"><img id="cardImg1" height="200px" width="200px" src="assets/Back-400sq.jpg"></div>
-                <div class="border color-bg-success card"><img id="cardImg2" height="200px" width="200px" src="assets/Back-400sq.jpg"></div>
-                <div class="border color-bg-done card"><img id="cardImg3" height="200px" width="200px" src="assets/Back-400sq.jpg"></div>
-                <div class="border color-bg-success card"><img id="cardImg4" height="200px" width="200px" src="assets/Back-400sq.jpg"></div>
+        <div class="game-container grid">
+                       <!-- game card rows here -->
+            <div class="d-flex flex-justify-center row-1">
+                <div class="border color-bg-done card"><img id="cardImg1" height="200px" width="200px" src="assets/Images/Back-400sq.jpg"></div>
+                <div class="border color-bg-success card"><img id="cardImg2" height="200px" width="200px" src="assets/Images/Back-400sq.jpg"></div>
+                <div class="border color-bg-done card"><img id="cardImg3" height="200px" width="200px" src="assets/Images/Back-400sq.jpg"></div>
+                <div class="border color-bg-success card"><img id="cardImg4" height="200px" width="200px" src="assets/Images/Back-400sq.jpg"></div>
             </div>
 
             <div class="d-flex flex-justify-center row-2">
-                <div class="border color-bg-success card"><img id="cardImg5" height="200px" width="200px" src="assets/Back-400sq.jpg"></div>
-                <div class="border color-bg-done card"><img id="cardImg6" height="200px" width="200px" src="assets/Back-400sq.jpg"></div>
-                <div class="border color-bg-success card"><img id="cardImg7" height="200px" width="200px" src="assets/Back-400sq.jpg"></div>
-                <div class="border color-bg-done card"><img id="cardImg8" height="200px" width="200px" src="assets/Back-400sq.jpg"></div>
+                <div class="border color-bg-success card"><img id="cardImg5" height="200px" width="200px" src="assets/Images/Back-400sq.jpg"></div>
+                <div class="border color-bg-done card"><img id="cardImg6" height="200px" width="200px" src="assets/Images/Back-400sq.jpg"></div>
+                <div class="border color-bg-success card"><img id="cardImg7" height="200px" width="200px" src="assets/Images/Back-400sq.jpg"></div>
+                <div class="border color-bg-done card"><img id="cardImg8" height="200px" width="200px" src="assets/Images/Back-400sq.jpg"></div>
             </div>
 
             <div class="d-flex flex-justify-center row-3">
-                <div class="border color-bg-success card"><img id="cardImg9" height="200px" width="200px" src="assets/Back-400sq.jpg"></div>
-                <div class="border color-bg-done card"><img id="cardImg10" height="200px" width="200px" src="assets/Back-400sq.jpg"></div>
-                <div class="border color-bg-success card"><img id="cardImg11" height="200px" width="200px" src="assets/Back-400sq.jpg"></div>
-                <div class="border color-bg-done card"><img id="cardImg12" height="200px" width="200px" src="assets/Back-400sq.jpg"></div>
+                <div class="border color-bg-success card"><img id="cardImg9" height="200px" width="200px" src="assets/Images/Back-400sq.jpg"></div>
+                <div class="border color-bg-done card"><img id="cardImg10" height="200px" width="200px" src="assets/Images/Back-400sq.jpg"></div>
+                <div class="border color-bg-success card"><img id="cardImg11" height="200px" width="200px" src="assets/Images/Back-400sq.jpg"></div>
+                <div class="border color-bg-done card"><img id="cardImg12" height="200px" width="200px" src="assets/Images/Back-400sq.jpg"></div>
             </div>     
 
             <div class="d-flex flex-justify-center row-4">
-                    <div class="border color-bg-done card"><img id="cardImg13" height="200px" width="200px" src="assets/Back-400sq.jpg"></div>
-                    <div class="border color-bg-success card"><img id="cardImg14" height="200px" width="200px" src="assets/Back-400sq.jpg"></div>
-                    <div class="border color-bg-done card"><img id="cardImg15" height="200px" width="200px" src="assets/Back-400sq.jpg"></div>
-                    <div class="border color-bg-success card"><img id="cardImg16" height="200px" width="200px" src="assets/Back-400sq.jpg"></div>
+                    <div class="border color-bg-done card"><img id="cardImg13" height="200px" width="200px" src="assets/Images/Back-400sq.jpg"></div>
+                    <div class="border color-bg-success card"><img id="cardImg14" height="200px" width="200px" src="assets/Images/Back-400sq.jpg"></div>
+                    <div class="border color-bg-done card"><img id="cardImg15" height="200px" width="200px" src="assets/Images/Back-400sq.jpg"></div>
+                    <div class="border color-bg-success card"><img id="cardImg16" height="200px" width="200px" src="assets/Images/Back-400sq.jpg"></div>
             </div>
 
             <!-- count-up timer -->
@@ -80,8 +77,10 @@
             </div>
 
         <!-- Trigger/Open The Modal -->
-        <button id="myBtn">Show me a fact!</button>
-
+        <div class="button-row">
+            <button class="btn-mktg btn-signup-mktg btn-large-mktg" id="myBtn" type="button">Show me a fact!</button>
+        </div>
+        
         <!-- The Modal -->
         <div id="myModal" class="modal">
 
@@ -106,7 +105,7 @@
         <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
         <!-- External JavaScript file -->
         <script src="./assets/script.js"></script>
-        <script src="./assets/script-timerTest.js"></script>
+        <script src="./assets/script-timer.js"></script>
         <script src="./assets/trivia.js"></script>
     </body>
 
