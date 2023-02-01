@@ -19,3 +19,5 @@ function pad(val) {
     return valString;
   }
 };
+
+// Want to get date and timestamp logged to local storage for high scores list.

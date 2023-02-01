@@ -4,7 +4,7 @@
 ## Description:
 The "Hardcore Memory Game" tests a user's ability to remember where matching images are located. When the user clicks start game, the count-up timer begins. Images are loaded to 16 cards from the Flickr server-side API. The cards will flip over when clicked, and the user will be alerted when the cards match or do not match. Once all the cards are matched, the timer stops, facts about an animal (pulled from the Animal API Ninja server-side APIU) will pop up, and the user will be able to enter their initials to save their time to local storage. This allows the user to return the game and try to beat their score. 
 
-Deployed URL:
+Deployed URL: https://juliaguas17.github.io/team-project-one/
 
 
 ## User Story:
@@ -30,11 +30,21 @@ so that I may reduce the effects of potential dementia.
 
 
 ## Mock-Up:
+![screenshot](./assets/landingPage.png)
+![screenshot](./assets/gamePage.png)
+![screenshot](./assets/animalFactModal.png)
 
 
-## References:
+## Collaborators:
+GitHub:
+- Theresa Corsaut // theresacorsaut
+- Jennifer Engle // jengle-dev
+- Rebecca Lehew // rebeccalehew
+- Julianne Waters // juliaguas17
 
 
 ## Future Development:
 - Create multiple themes for the card images that the user can choose from
 - Allow user to choose number of cards in the game
+- Making the game two player
+- Figure out how to narrow down the Flickr image search

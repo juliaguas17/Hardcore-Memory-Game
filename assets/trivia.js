@@ -32,9 +32,9 @@ for(i = 0; i < animalArray.length; i++){
     
 function returnTrivia(result) {
     var factsArray = [
-        'A ' + result[0].name + 'lives in ' + result[0].characteristics.habitat,
-        'A ' + result[0].name + 'lives for ' + result[0].characteristics.lifespan,
-        'A ' + result[0].name + result[0].characteristics.slogan
+        'A ' + result[0].name + ' lives in ' + result[0].characteristics.habitat + '.',
+        'A ' + result[0].name + ' lives for ' + result[0].characteristics.lifespan + '.',
+        'A ' + result[0].name + ' ' + result[0].characteristics.slogan
     ];
     console.log(factsArray);
     var facts = document.getElementById('facts');
