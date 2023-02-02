@@ -80,3 +80,11 @@ function gameOver () {
 function showTrivia() {
     document.getElementById("trivia-modal").style.display=block;
 }
+
+// Save initials to local storage
+var formInitials = document.getElementById('form-initials');
+formInitials.addEventListener('submit', function(e){
+  e.preventDefault();
+  var initials = document.querySelector('.initials').value;
+  window.localStorage.setItem('initials', initials);
+});
