@@ -30,9 +30,9 @@ so that I may reduce the effects of potential dementia.
 
 
 ## Mock-Up:
-![screenshot](./assets/landingPage.png)
-![screenshot](./assets/gamePage.png)
-![screenshot](./assets/animalFactModal.png)
+![screenshot](./assets/Images/landingPage.png)
+![screenshot](./assets/Images/gamePage.png)
+![screenshot](./assets/Images/animalFactModal.png)
 
 
 ## Collaborators:
