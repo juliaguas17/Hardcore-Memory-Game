@@ -11,14 +11,8 @@ $.ajax({
     headers: { 'X-Api-Key': APIkey},
     contentType: 'application/json',
     
-    success: function(result) {
-        console.log(result[0]);
-        console.log(result[0].name);
-        console.log(result[0].characteristics.lifespan);
-        console.log(result[0].characteristics.habitat);
-        console.log(result[0].characteristics.slogan);
+    success: function(result) {        console.log(result[0].name);
         returnTrivia(result);
-        console.log(result);
     },
     error: function ajaxError(jqXHR) {
         console.error('Error: ', jqXHR.responseText);
@@ -36,7 +30,6 @@ function returnTrivia(result) {
         'A ' + result[0].name + ' lives for ' + result[0].characteristics.lifespan + '.',
         'A ' + result[0].name + ' ' + result[0].characteristics.slogan
     ];
-    console.log(factsArray);
     var facts = document.getElementById('facts');
     for(i = 0; i < factsArray.length; i++){
     facts.textContent= factsArray[i];
